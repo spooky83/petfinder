@@ -1,0 +1,104 @@
+<LinearLayout android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:descendantFocusability="blocksDescendants"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#437abd" android:descendantFocusability="blocksDescendants">
+
+        <ImageView
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:src="@drawable/show_menu"
+            android:id="@+id/open_menu" />
+    </LinearLayout>
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent"
+        xmlns:tools="http://schemas.android.com/tools" tools:context="gg.petfinder.petfinder.Opciones">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="309dp"
+            android:id="@+id/galeriafrg"
+            android:foregroundGravity="top"
+            android:layout_gravity="top"
+            android:translationZ="1dp"
+            android:contextClickable="false"
+            android:focusable="false"
+            android:visibility="gone">
+<!--
+            <ImageButton
+                android:layout_width="54dp"
+                android:layout_height="45dp"
+                android:id="@+id/close_gallery"
+                android:layout_gravity="right|bottom"
+                android:src="@drawable/com_facebook_close"
+                android:background="@android:color/transparent"
+                android:visibility="gone" />
+-->
+            <ListView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/itemsGallery" />
+            <ImageButton
+                android:layout_width="54dp"
+                android:layout_height="45dp"
+                android:id="@+id/close_gallery_id"
+                android:layout_gravity="right|bottom"
+                android:src="@drawable/com_facebook_close"
+                android:background="@android:color/transparent"
+                android:contentDescription="Cerrar" />
+
+        </FrameLayout>
+
+        <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            tools:ignore="MergeRootFrame" android:descendantFocusability="blocksDescendants" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/agregar"
+            android:layout_marginBottom="40dp"
+            android:layout_marginRight="35dp"
+            android:layout_gravity="bottom|right"
+            android:src="@drawable/newbutton" />
+
+        <!--
+                <it.sephiroth.android.library.viewrevealanimator.ViewRevealAnimator
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/animator"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:animationDuration="@android:integer/config_longAnimTime"
+                    app:vra_hideBeforeReveal="true"
+                    android:measureAllChildren="true"
+                    android:animateFirstView="true"
+                    android:outAnimation="@anim/out_animation"
+                    android:inAnimation="@anim/in_animation"
+                    android:interpolator="@android:interpolator/accelerate_decelerate">
+
+                </it.sephiroth.android.library.viewrevealanimator.ViewRevealAnimator>-->
+        <!--
+        <com.veinhorn.scrollgalleryview.ScrollGalleryView
+            android:id="@+id/scroll_gallery_view"
+            android:layout_width="match_parent"
+            android:layout_height="163dp"
+            android:background="#000"
+            android:visibility="invisible" />-->
+    </FrameLayout>
+
+
+</LinearLayout>
+

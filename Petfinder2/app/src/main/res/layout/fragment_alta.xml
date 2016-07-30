@@ -1,0 +1,136 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:background="#f5113473"
+        android:layout_weight="1.58">
+
+        <FrameLayout
+            android:id="@+id/camera_preview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="10dp">
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:layout_gravity="center_horizontal|bottom">
+
+            <HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignBottom="@+id/camera_preview">
+
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="62dp"
+                    android:id="@+id/fotos"
+                    android:nestedScrollingEnabled="true"
+                    android:scrollIndicators="bottom">
+
+                </LinearLayout>
+
+
+
+           </HorizontalScrollView>
+
+        </LinearLayout>
+
+        <EditText
+            android:layout_width="334dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/coordenadas"
+            android:contextClickable="false"
+            android:background="@android:color/transparent"
+            android:editable="false"
+            android:layout_marginTop="10dp"
+            android:gravity="left"
+            android:textColor="#e583bdf7" />
+
+        <Button
+            android:id="@+id/button_capture"
+            android:background="@drawable/btntrasnpic"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+
+            android:layout_gravity="right"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="40dp" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="250dp"
+            android:layout_gravity="right"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:gravity="bottom"
+            android:layout_alignBottom="@+id/camera_preview"
+            android:layout_marginBottom="100dp">
+
+            <Button
+                android:id="@+id/activar_camara"
+                android:background="@drawable/camera_icon2"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="5dp"
+                android:layout_gravity="right"
+                android:layout_marginRight="0dp" />
+            <Button
+                android:id="@+id/button_map"
+                android:background="@drawable/point_map_icon"
+                android:layout_width="55dp"
+                android:layout_height="50dp"
+                android:layout_gravity="right"
+                android:layout_marginBottom="20dp"
+                android:layout_marginRight="3dp" />
+
+            <Button
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:id="@+id/button"
+                android:background="@drawable/acceptar_2"
+                android:layout_marginRight="10dp"
+                android:layout_gravity="right"
+                android:layout_marginBottom="20dp" />
+
+            <EditText
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+
+                android:text="Info.."
+                android:id="@+id/info"
+                android:editable="true"
+                android:inputType="textMultiLine|textImeMultiLine"
+                android:layout_marginLeft="10dp"
+                android:textColor="#bab7b7"
+                android:autoText="false"
+                android:background="@android:color/transparent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></LinearLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,52 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.1"
+    useLibrary 'org.apache.http.legacy'
+    defaultConfig {
+        applicationId "gg.petfinder.petfinder"
+        minSdkVersion 16
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+repositories {
+    jcenter {
+        url "http://jcenter.bintray.com/"
+    }
+    maven {
+        url "https://jitpack.io"
+    }
+}
+
+dependencies {
+
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.squareup.retrofit2:retrofit:2.1.0'
+    compile 'com.android.support:appcompat-v7:23.1.1'
+    compile project(':library')
+
+    /*compile project(':actionbarsherlock')*/
+    compile 'com.facebook.android:facebook-android-sdk:4.9.0'
+    compile 'com.google.android.gms:play-services:8.4.0'
+    compile 'com.android.support:design:23.1.1'
+    compile 'de.hdodenhof:circleimageview:2.0.0'
+    compile 'com.android.support:support-v4:23.0.0'
+    compile 'com.cr5315:socialbuttons:0.2.0'
+    compile 'com.veinhorn.scrollgalleryview:library:1.0.5'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+
+    compile 'com.nineoldandroids:library:2.4.0'
+    compile 'com.daimajia.easing:library:1.0.1@aar'
+    compile 'com.daimajia.androidanimations:library:1.1.3@aar'
+    compile 'it.sephiroth.android.library.viewrevealanimator:view-reveal-animator:+'
+}

@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Petfinder</string>
+    <string name="act_main_usr" >Usuario</string>
+    <string name="act_main_pass" >Password</string>
+    <string name="act_main_olvide_pass" >Olvide mi clave</string>
+    <string name="act_main_nuevo_usuario" >Password</string>
+
+
+    <string name="frg_opciones_Buscar" >Ver Perdidos</string>
+    <string name="frg_opciones_Publicar" >Publicar perdido</string>
+    <string name="frg_opciones_alarma" >Configurar Alarma</string>
+
+    <string name="toast_agregar" >Publicar</string>
+
+    <string name="act_main_ingresar" >Password</string>
+    <string name="google_app_id">185934135096768</string>
+    <string name="facebook_app_id">185934135096768</string>
+    <string name="abierto">185934135096768</string>
+    <string name="cerrado">185934135096768</string>
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_principal">principal</string>
+
+
+    <string-array name="Tags">
+        <item>Mis Encontrados</item>
+        <item>Salir</item>
+        <item>Comunidad</item>
+        <item>JavaScript</item>
+        <item>Angular JS</item>
+        <item>Python</item>
+        <item>Ruby</item>
+    </string-array>
+    <string name="title_activity_main2">Main2Activity</string>
+
+
+</resources>
